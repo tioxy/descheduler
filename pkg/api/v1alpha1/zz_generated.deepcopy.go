@@ -52,6 +52,11 @@ func (in *DeschedulerPolicy) DeepCopyInto(out *DeschedulerPolicy) {
 		*out = new(bool)
 		**out = **in
 	}
+	if in.EvictDaemonSetPods != nil {
+		in, out := &in.EvictDaemonSetPods, &out.EvictDaemonSetPods
+		*out = new(bool)
+		**out = **in
+	}
 	if in.EvictSystemCriticalPods != nil {
 		in, out := &in.EvictSystemCriticalPods, &out.EvictSystemCriticalPods
 		*out = new(bool)
