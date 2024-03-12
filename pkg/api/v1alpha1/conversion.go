@@ -201,6 +201,7 @@ func V1alpha1ToInternal(
 							Name: defaultevictor.PluginName,
 							Args: &defaultevictor.DefaultEvictorArgs{
 								EvictLocalStoragePods:   evictLocalStoragePods,
+								EvictDaemonSetPods:      evictDaemonSetPods,
 								EvictSystemCriticalPods: evictSystemCriticalPods,
 								IgnorePvcPods:           ignorePvcPods,
 								EvictFailedBarePods:     evictBarePods,
